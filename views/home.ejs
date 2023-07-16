@@ -1,0 +1,66 @@
+<%- include("header"); -%>
+
+<div class="top">
+    <h1>Weather Dashboard</h1>
+</div>
+<div class="outer">
+    <div class="left-side">
+        <form class="form" method="post">      <!-------the route is for the app.js server home>---------> 
+            <h3>Enter a City Name</h3>
+            <input type="text" name="cityName" placeholder="E.g., New York, London, Lagos, Enugu">
+            <button type="submit">Search</button>
+            <hr>or <hr>
+            <button class="current" >Use Current Location</button>
+        </form>
+    </div>
+    <div class="right-side">
+        <div class="display-first">
+            <div class="first-container">
+                <h2 id="header"> <%=cityNamey%></h2>
+                <p class="temp"><%=cityTemp%>:  </p>
+                <p class="wind"><%=windCity%>: </p>
+                <p class="Hum"><%=humidityCity%>: </p>
+            </div>
+            <div class="img-display">
+                <img src="<%=weatherImage%>" alt="Weather image">
+            </div>
+        </div>
+        <div>
+            <h2>Four Days Weather Forecast</h2>
+        </div>
+        <div class="four-display">
+            <div class="Day one">
+                <h3>(___ ___ __)</h3>
+                <img src="" alt="cloud">
+                <p>Temp: </p>
+                <p>WInd: </p>
+                <p>Humidity: </p>
+            </div>
+            <div class="Day two">
+                <h3>(___ ___ __)</h3>
+                <img src="" alt="cloud">
+                <p>Temp: </p>
+                <p>WInd: </p>
+                <p>Humidity: </p>
+            </div>
+            <div class="Day three">
+                <h3>(___ ___ __)</h3>
+                <img src="" alt="cloud">
+                <p>Temp: </p>
+                <p>WInd: </p>
+                <p>Humidity: </p>
+            </div>
+            <div class="Day four">
+                <h3>(___ ___ __)</h3>
+                <img src="" alt="cloud">
+                <p>Temp: </p>
+                <p>WInd: </p>
+                <p>Humidity: </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
