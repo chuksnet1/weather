@@ -28,13 +28,12 @@ app.post("/", function (req, res) {
     }
 
     const units = 'metric'
-    const API = 'cc694a2451b9c98701a8a86faa65f0a0'
-
+    const API = "Api"
     
     async function fetchApi() {
 
         try {
-            const endPoint = new URL('https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=cc694a2451b9c98701a8a86faa65f0a0&units=metric');
+            const endPoint = new URL('https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=API&units=metric');
 
        
         const response = await fetch(endPoint)
